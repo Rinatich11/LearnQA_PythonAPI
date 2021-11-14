@@ -27,7 +27,7 @@ for request_method in methods:
             print(f"При методе {request_method} и параметре {params_method}")
             print(f"Ожидается такое: {response_3.text}")
             print(f"А получается вот так: {response_1.text}")
-        if request_method != params_method and response.text == response_3.text:
+        elif request_method != params_method and response.text == response_3.text:
             print(f"При методе {request_method} и параметре {params_method}")
             print(f"Ожидается такое: {response_1.text}")
             print(f"А получается вот так: {response_3.text}")
