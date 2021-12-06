@@ -13,8 +13,6 @@ excluded_params = [
     ("username")
 ]
 
-letters = string.ascii_lowercase
-rand_string = ''.join(random.choice(letters) for i in range(251))
 
 class TestUserRegister(BaseCase):
 
